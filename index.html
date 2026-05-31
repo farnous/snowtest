@@ -484,10 +484,16 @@
     <div class="tab-panel active" id="tab-exams">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
         <h2 style="margin:0;">Saved exams</h2>
-        <button class="btn-sm" id="clear-all-btn" style="color:var(--red-text);border-color:var(--red-border);">
-          <i class="ti ti-trash" aria-hidden="true"></i> Clear all
-        </button>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <button class="btn-sm" id="refresh-remote-btn" title="Re-fetch exams from GitHub" style="display:none;">
+            <i class="ti ti-refresh" aria-hidden="true"></i>
+          </button>
+          <button class="btn-sm" id="clear-all-btn" style="color:var(--red-text);border-color:var(--red-border);">
+            <i class="ti ti-trash" aria-hidden="true"></i> Clear all
+          </button>
+        </div>
       </div>
+      <div id="remote-status" style="font-size:12px;margin-bottom:0.75rem;min-height:16px;"></div>
       <ul class="exam-list" id="exam-list"></ul>
       <div class="empty-state" id="no-exams-msg" style="display:none;">
         <i class="ti ti-books" aria-hidden="true"></i>
@@ -1229,6 +1235,74 @@ document.getElementById('file-input').addEventListener('change', e => {
   e.target.value = '';
 });
 
+// ─── Remote exam loading ──────────────────────────────────────────────
+// Point this to your raw GitHub config file, e.g.:
+// https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/exams/exams.config.json
+// Leave empty string to disable remote loading.
+const REMOTE_CONFIG_URL = '';
+
+// Each remote exam gets a stable ID derived from its URL so progress
+// persists across page reloads (unlike uploaded exams which use Date.now()).
+function remoteExamId(url) {
+  // Simple deterministic hash from URL string
+  let h = 0;
+  for (let i = 0; i < url.length; i++) { h = (Math.imul(31, h) + url.charCodeAt(i)) | 0; }
+  return 'remote_' + Math.abs(h).toString(36);
+}
+
+async function loadRemoteExams() {
+  if (!REMOTE_CONFIG_URL) return;
+  const statusEl = document.getElementById('remote-status');
+  statusEl.textContent = 'Loading exams from GitHub…';
+  statusEl.style.color = 'var(--text-hint)';
+
+  try {
+    const cfgRes = await fetch(REMOTE_CONFIG_URL, { cache: 'no-cache' });
+    if (!cfgRes.ok) throw new Error(`Config fetch failed: ${cfgRes.status}`);
+    const cfg = await cfgRes.json();
+
+    if (!Array.isArray(cfg.exams)) throw new Error('Config must have an "exams" array');
+
+    let loaded = 0, skipped = 0;
+    await Promise.all(cfg.exams.map(async entry => {
+      const url = typeof entry === 'string' ? entry : entry.url;
+      if (!url) return;
+      const id = remoteExamId(url);
+
+      // Only re-fetch if we don't already have this exam's questions cached
+      // (progress is preserved either way)
+      if (store[id]?.questions?.length) { skipped++; return; }
+
+      try {
+        const res = await fetch(url, { cache: 'no-cache' });
+        if (!res.ok) throw new Error(`${res.status}`);
+        const data = await res.json();
+        if (!data.questions || !Array.isArray(data.questions)) throw new Error('Invalid format');
+        const existing = store[id] || {};
+        store[id] = {
+          meta: { title: data.exam_metadata?.title || (typeof entry === 'object' && entry.title) || url.split('/').pop(), total: data.questions.length, remote: true, url },
+          questions: data.questions,
+          progress: existing.progress || {}
+        };
+        loaded++;
+      } catch (err) {
+        console.warn('Failed to load exam:', url, err.message);
+      }
+    }));
+
+    saveStore(store);
+    statusEl.textContent = loaded ? `✓ ${loaded} exam(s) loaded from GitHub` : skipped ? '✓ Exams up to date' : '⚠ No exams loaded';
+    statusEl.style.color = loaded || skipped ? 'var(--green-text)' : 'var(--amber-text)';
+  } catch (err) {
+    statusEl.textContent = '⚠ Could not load remote exams: ' + err.message;
+    statusEl.style.color = 'var(--red-text)';
+    console.error(err);
+  }
+
+  renderHome();
+}
+
+// ─── Local file upload ────────────────────────────────────────────────
 function loadJSON(file) {
   const reader = new FileReader();
   reader.onload = e => {
@@ -1251,7 +1325,20 @@ function loadJSON(file) {
   reader.readAsText(file);
 }
 
+// ─── Init ─────────────────────────────────────────────────────────────
 renderHome();
+if (REMOTE_CONFIG_URL) {
+  document.getElementById('refresh-remote-btn').style.display = '';
+  loadRemoteExams();
+}
+
+document.getElementById('refresh-remote-btn').addEventListener('click', () => {
+  // Force re-fetch by clearing cached questions for remote exams
+  Object.entries(store).forEach(([id, data]) => {
+    if (data.meta?.remote) delete store[id].questions;
+  });
+  loadRemoteExams();
+});
 </script>
 </body>
 </html>
