@@ -1,6 +1,6 @@
 {
   "exam_metadata": {
-    "title": "ServiceNow CIS - DF 2 - Additional Questions (Variant Pool)",
+    "title": "CIS - Data Foundations (CMDB & CSDM) - 3",
     "source": "User-provided list of new exam topics not present (or different) in CIS_DF_2_FINAL.json",
     "total_questions": 18,
     "note": "Original question IDs are preserved as provided by the user (Q1-Q74 numbering from the new variant). Answers were verified against ServiceNow official documentation, ServiceNow Community articles, and CSDM whitepapers. Choice text is inferred from the topic; once you upload the second PDF Claude can update the exact wording."
