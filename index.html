@@ -1239,7 +1239,7 @@ document.getElementById('file-input').addEventListener('change', e => {
 // Point this to your raw GitHub config file, e.g.:
 // https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/exams/exams.config.json
 // Leave empty string to disable remote loading.
-const REMOTE_CONFIG_URL = '';
+const REMOTE_CONFIG_URL = 'https://raw.githubusercontent.com/farnous/snowtest/main/exams/exams.config.json';
 
 // Each remote exam gets a stable ID derived from its URL so progress
 // persists across page reloads (unlike uploaded exams which use Date.now()).
