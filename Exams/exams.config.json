@@ -1,0 +1,17 @@
+{
+  "exams": [
+    {
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/exams/CIS_DF_1_FINAL.json",
+      "title": "CIS - Data Foundations (CMDB & CSDM) 1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/exams/CIS_DF_2_FINAL.json",
+      "title": "CIS - Data Foundations (CMDB & CSDM) 2 "
+    },
+    {
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/exams/CIS_DF_3_FINAL.json",
+      "title": "CIS - Data Foundations (CMDB & CSDM) 3 "
+    }
+
+  ]
+}
