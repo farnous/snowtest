@@ -1,15 +1,15 @@
 {
   "exams": [
     {
-      "url": "https://farnous.github.io/snowtest/Exams/CIS_DF_1_FINAL.json",
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/Exams/CIS_DF_1_FINAL.json",
       "title": "CIS - Data Foundations (CMDB & CSDM) 1"
     },
     {
-      "url": "https://farnous.github.io/snowtest/Exams/CIS_DF_2_FINAL.json",
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/Exams/CIS_DF_2_FINAL.json",
       "title": "CIS - Data Foundations (CMDB & CSDM) 2 "
     },
     {
-      "url": "https://farnous.github.io/snowtest/Exams/CIS_DF_3_FINAL.json",
+      "url": "https://raw.githubusercontent.com/farnous/snowtest/main/Exams/CIS_DF_3_FINAL.json",
       "title": "CIS - Data Foundations (CMDB & CSDM) 3 "
     }
 
