@@ -1,0 +1,1288 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "A CMDB Administrator has built a number of Technology Management Service Offerings (Technical Service Offerings) based on Dynamic CI Groups to better maintain group alignment for the member CI.Which Groups are synced to CIs from the offering that has a relationship to a Dynamic CI Group? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Approval Group"
+        },
+        {
+          "id": "B",
+          "text": "Managed by Group"
+        },
+        {
+          "id": "C",
+          "text": "Support Group"
+        },
+        {
+          "id": "D",
+          "text": "Owned by Group"
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384133-exam-cis-df-topic-1-question-1-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 2,
+      "type": "single_choice",
+      "question": "The CMDB Administrator has set-up two Dynamic Reconcilliation Rules within the ServiceNow Production Instance. The \u2018Server\u2019 class has a Dynamic Reconciliation Rule of largest value for the RAM field. The \u2018Windows Server\u2019 class has a Dynamic Reconciliation Rule of most reported for the RAM field.Given the above data in the Multisource CMDB, which value would be added to the CMDB for RAM for a \u2018Server\u2019 CI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "4.096 MB"
+        },
+        {
+          "id": "B",
+          "text": "8.192 MB"
+        },
+        {
+          "id": "C",
+          "text": "2.048 MB"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384707-exam-cis-df-topic-2-question-1-discussion/",
+      "tags": []
+    },
+    {
+      "id": 3,
+      "type": "single_choice",
+      "question": "A CMDB Administrator would like to minimize stale CIs in the CMDB.Which CMDB Health Dashboard scorecard displays this information?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Correctness"
+        },
+        {
+          "id": "B",
+          "text": "Compliance"
+        },
+        {
+          "id": "C",
+          "text": "Completeness"
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384479-exam-cis-df-topic-3-question-1-discussion/",
+      "tags": []
+    },
+    {
+      "id": 4,
+      "type": "single_choice",
+      "question": "DRAG DROP -A manufacturing organization has implemented Incident Management in ServiceNow and wants to integrate additional products to enhance its functionality.Drag each ServiceNow product to the value it brings to supporting Incident Management.",
+      "choices": [],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384946-exam-cis-df-topic-4-question-1-discussion/",
+      "tags": []
+    },
+    {
+      "id": 5,
+      "type": "single_choice",
+      "question": "In a company there is a need to understand the CSDM maturity level needed. Different stakeholders listed a number of use cases that they expect over time.Which use case requires information objects?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The Event Operations team wants to automate their events into incident for operational actions."
+        },
+        {
+          "id": "B",
+          "text": "The Business Service Management team wants to understand the operational impact for their consumer parties."
+        },
+        {
+          "id": "C",
+          "text": "The Customer Service team wants to onboard pro-active case management."
+        },
+        {
+          "id": "D",
+          "text": "The SecOps team wants to understand the operational risk in the Business Application context."
+        },
+        {
+          "id": "E",
+          "text": "The Asset Management wants to understand to asset life cycle compliancy in a Business Application context."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384735-exam-cis-df-topic-5-question-1-discussion/",
+      "tags": []
+    },
+    {
+      "id": 6,
+      "type": "single_choice",
+      "question": "DRAG DROP -Drag and drop the application service type to the best description.",
+      "choices": [],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384359-exam-cis-df-topic-2-question-2-discussion/",
+      "tags": []
+    },
+    {
+      "id": 7,
+      "type": "single_choice",
+      "question": "A CMDB Administrator needs to import external data into the CMDB. As the CMDB Administrator wants to reduce the risk for creating duplicates and to update information from unauthorized sources, it has to be ensured that the Identification and Reconciliation API will not be bypassed.What is the recommended method to import data into the CMDB utilizing the Identification and Reconciliation API?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "IntegrationHub ETL"
+        },
+        {
+          "id": "B",
+          "text": "Table API (REST API or SOAP API)"
+        },
+        {
+          "id": "C",
+          "text": "Import Sets and Transform Maps"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384541-exam-cis-df-topic-2-question-2-discussion/",
+      "tags": []
+    },
+    {
+      "id": 8,
+      "type": "single_choice",
+      "question": "DRAG DROP -Drag and drop the CMDB Health Dashboard metric to the description.",
+      "choices": [],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384480-exam-cis-df-topic-3-question-2-discussion/",
+      "tags": []
+    },
+    {
+      "id": 9,
+      "type": "single_choice",
+      "question": "Where can a CMDB 360/Multisource CMDB Saved Query be viewed and created in the CMDB Workspace?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Saved queries window on the Insight tab"
+        },
+        {
+          "id": "B",
+          "text": "CMDB Query Builder"
+        },
+        {
+          "id": "C",
+          "text": "Coverage window on the CMDB 360 tab"
+        },
+        {
+          "id": "D",
+          "text": "Saved queries window on the CMDB 360 tab"
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384729-exam-cis-df-topic-4-question-2-discussion/",
+      "tags": []
+    },
+    {
+      "id": 10,
+      "type": "single_choice",
+      "question": "A Platform Owner is collaborating with stakeholders in the manufacturing industry to align their CIs with the CSDM 5 framework. They need to map production line monitoring systems to the appropriate CSDM domain.Which CSDM 5 domain does the Platform Owner use?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Build and Integration (Build)"
+        },
+        {
+          "id": "B",
+          "text": "Service Delivery (Manage Technical)"
+        },
+        {
+          "id": "C",
+          "text": "Service Consumption (Sell/Consume)"
+        },
+        {
+          "id": "D",
+          "text": "Design and Planning (Design)"
+        },
+        {
+          "id": "E",
+          "text": "Foundation"
+        }
+      ],
+      "correct_answers": [
+        "B"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384736-exam-cis-df-topic-5-question-2-discussion/",
+      "tags": []
+    },
+    {
+      "id": 11,
+      "type": "single_choice",
+      "question": "A new custom class is needed to reflect a new application being managed in the CMDB.Which roles are minimally needed to add this custom CI class?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A cmdb_inst_admin and personalize_form"
+        },
+        {
+          "id": "B",
+          "text": "itil_admin and personalize_form"
+        },
+        {
+          "id": "C",
+          "text": "data_classification_admin and personalize_dictionary"
+        },
+        {
+          "id": "D",
+          "text": "sn_cmdb_admin and personalize_dictionary"
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384360-exam-cis-df-topic-1-question-3-discussion/",
+      "tags": []
+    },
+    {
+      "id": 12,
+      "type": "single_choice",
+      "question": "A Configuration Manager has configured a multiple data sources which are all authorized to update the same class and the same set of class attributes in the CMDB.What can the Configuration Manager do to control which data source should be authoritative source of truth for a specific class of set of class attributes?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Assign a priority to each data source in the reconciliation rules"
+        },
+        {
+          "id": "B",
+          "text": "Manually run the data source updates in the correct order"
+        },
+        {
+          "id": "C",
+          "text": "Configure data refresh rules with a specific time period"
+        },
+        {
+          "id": "D",
+          "text": "Assign a run order to each data source in the identification rules"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384708-exam-cis-df-topic-2-question-3-discussion/",
+      "tags": []
+    },
+    {
+      "id": 13,
+      "type": "single_choice",
+      "question": "An organization is changing data centers and needs to know the consequences of the planned changes.How can Application Service mapping be used as part of Change Management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To understand the physical location of CIs"
+        },
+        {
+          "id": "B",
+          "text": "To identify which devices will go offline first"
+        },
+        {
+          "id": "C",
+          "text": "To understand the business impact of CIs"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384730-exam-cis-df-topic-4-question-3-discussion/",
+      "tags": []
+    },
+    {
+      "id": 14,
+      "type": "single_choice",
+      "question": "A development team is working on a project and an application will be deployed to many servers. There will be several security requirements that must be checked to adhere to lawful compliance because the application will be holding customer personal data (PII and PCI).Where in the CSDM does the development team look to store the information that will be used to satisfy the audits?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Technology Management Service Offerings (Technical Service Offerings) and Dynamic CI Groups"
+        },
+        {
+          "id": "B",
+          "text": "Business Applications and Information Objects"
+        },
+        {
+          "id": "C",
+          "text": "Customer Service Offerings and Databases"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384737-exam-cis-df-topic-5-question-3-discussion/",
+      "tags": []
+    },
+    {
+      "id": 15,
+      "type": "single_choice",
+      "question": "What is the relationship between an application and a server?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Application>Used by::Uses>Server"
+        },
+        {
+          "id": "B",
+          "text": "Application> Uses::Used by>Server"
+        },
+        {
+          "id": "C",
+          "text": "Application>Runs::Runs On>Server"
+        },
+        {
+          "id": "D",
+          "text": "Application>Runs on::Runs>Server"
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384361-exam-cis-df-topic-1-question-4-discussion/",
+      "tags": []
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "question": "Which CMDB 360/Multisource CMDB the Dynamic Reconciliation Rules will also be enabled. Based on the request of the management, a CMDB Administrator has to set up multiple Dynamic Reconciliation Rules.Which are available \u2018Dynamic Rule Types\u2019 within the \u2018Create Reconciliation Rule\u2019 wizard? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Last Updated"
+        },
+        {
+          "id": "B",
+          "text": "Smallest Value"
+        },
+        {
+          "id": "C",
+          "text": "Last Created"
+        },
+        {
+          "id": "D",
+          "text": "Most Reported"
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384709-exam-cis-df-topic-2-question-4-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 17,
+      "type": "single_choice",
+      "question": "A CMDB Administrator identifies duplicate CIs. One was created by a manual import, and the other one was created by automated discovery. The discovered CI has the latest IP address, while the manually imported CI has an accurate relationship to a critical business application.How does the Administrator use the Duplicate CI Remediator to resolve this issue?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Retain the manually imported CI, and delete the discovered CI"
+        },
+        {
+          "id": "B",
+          "text": "Merge the two CIs automatically, retaining all attributes from the discovered CI"
+        },
+        {
+          "id": "C",
+          "text": "Retain the discovered CI, but merge the relationship from the manually imported CI"
+        },
+        {
+          "id": "D",
+          "text": "Retain the discovered CI, and delete the manually imported CI"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384718-exam-cis-df-topic-3-question-4-discussion/",
+      "tags": []
+    },
+    {
+      "id": 18,
+      "type": "single_choice",
+      "question": "Where can an administrator perform Natural Language Queries (NLQ)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "CMDB Data Manager"
+        },
+        {
+          "id": "B",
+          "text": "CI Class Manager"
+        },
+        {
+          "id": "C",
+          "text": "CMDB Workspace"
+        },
+        {
+          "id": "D",
+          "text": "CMDB Health Dashboard"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384731-exam-cis-df-topic-4-question-4-discussion/",
+      "tags": []
+    },
+    {
+      "id": 19,
+      "type": "single_choice",
+      "question": "A customer\u2019s CMDB is aligned to the CSDM Walk stage.What benefit is provided by the CMDB?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Enables impact assessments for incident, problem, and change on Business Services"
+        },
+        {
+          "id": "B",
+          "text": "Improves the implementation velocity of APM Foundation for future business application rationalization"
+        },
+        {
+          "id": "C",
+          "text": "Allows for additional stratification of Technical team\u2019s support structure along the lines of OLAs and commitments"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384920-exam-cis-df-topic-5-question-4-discussion/",
+      "tags": []
+    },
+    {
+      "id": 20,
+      "type": "single_choice",
+      "question": "User endpoint devices are imported into the CMDB and populate the \u2018Assigned to\u2019 [assigned_to] field on the Computer [cmdb_ci_computer] CI. The Asset team puts in a request for the Configuration Analysts to populate the \u2018Assigned to\u2019 field on the related Asset.What action does a Configuration Analyst take to achieve this in an automated way?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use the Asset-CI Field Mapping module to create a new rule to replicate the \u2018Assigned to\u2019 value between the asset and associated CI"
+        },
+        {
+          "id": "B",
+          "text": "Hide the \u2018Assigned to\u2019 field on the asset record and create a new field that dot walks to the related CI to get the \u2018Assigned to\u2019 value"
+        },
+        {
+          "id": "C",
+          "text": "Configure a business rule on the computer table to use a script to populate the \u2018Assigned to\u2019 filed on the asset based on insert or update in the computer class \u2018Assigned to\u2019 field"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384362-exam-cis-df-topic-1-question-5-discussion/",
+      "tags": []
+    },
+    {
+      "id": 21,
+      "type": "single_choice",
+      "question": "The following identification rule for a CI class has been defined:Two new CI records are imported into the hardware class of the CMDB:CI1: The name of this CI record matches the name of an existing CI record in the CMDB.CI2: The IP address of this CI record matches the IP address of an existing CI record in the CMDB.Which is correct based on the identification rule and the imported CI records?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "CI1 will be inserted as new record and CI2 will be updated with matching record."
+        },
+        {
+          "id": "B",
+          "text": "CI1 will be updated with matching record and CI2 will be inserted as new record."
+        },
+        {
+          "id": "C",
+          "text": "CI1 and CI2 both will be updated with matching records."
+        },
+        {
+          "id": "D",
+          "text": "CI1 and CI2 both will be inserted as new records."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384710-exam-cis-df-topic-2-question-5-discussion/",
+      "tags": []
+    },
+    {
+      "id": 22,
+      "type": "single_choice",
+      "question": "A CMDB Administrator wants to remove all Linux Servers in the organization that have not been updated in six months.Which recommended action does the Administrator take in Data Manager?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Create a business rule"
+        },
+        {
+          "id": "B",
+          "text": "Create an archive policy"
+        },
+        {
+          "id": "C",
+          "text": "Create a scheduled job"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384719-exam-cis-df-topic-3-question-5-discussion/",
+      "tags": []
+    },
+    {
+      "id": 23,
+      "type": "single_choice",
+      "question": "A healthcare provider faces a critical incident affecting its patient management system. The provider needs to determine the users impacted to mitigate disruption effectively.Which CSDM-related data should they leverage?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Incident history of similar CIs"
+        },
+        {
+          "id": "B",
+          "text": "Application Service environment attribute"
+        },
+        {
+          "id": "C",
+          "text": "Service Offerings by Department or Location"
+        },
+        {
+          "id": "D",
+          "text": "Affected CI [task_ci] related list"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384732-exam-cis-df-topic-4-question-5-discussion/",
+      "tags": []
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "question": "A CMDB Administrator needs to create a new CI class for the Internet of Things (IoT) Sensor in ServiceNow.What are the recommended practices for this specific activity? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Add a new class under an appropriate parent class"
+        },
+        {
+          "id": "B",
+          "text": "Modify an existing class"
+        },
+        {
+          "id": "C",
+          "text": "Install or update the CMDB CI Class Models store application, and verify the class does not already exist"
+        },
+        {
+          "id": "D",
+          "text": "Delete an unused class, and replace it with the new one"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384363-exam-cis-df-topic-1-question-6-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 25,
+      "type": "single_choice",
+      "question": "A customer wants recently imported server records to be automatically reclassified into more specific CMDB classes after being discovered using ServiceNow Discovery.During the discovery process, if existing Server [cmdb_ci_server] records are reclassified into the Linux [cmdb_ci_linux_server] and Windows Server [cmdb_ci_win_server] classes, which reclassification operation occurred?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Class Upgrade"
+        },
+        {
+          "id": "B",
+          "text": "Class Downgrade"
+        },
+        {
+          "id": "C",
+          "text": "Class Switch"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384711-exam-cis-df-topic-2-question-6-discussion/",
+      "tags": []
+    },
+    {
+      "id": 26,
+      "type": "single_choice",
+      "question": "The CMDB Administrator group aims to display meaningful results on the CMDB Health Dashboard Compliance Scorecard for server records that are not on the latest patch.What must be configured to achieve this goal?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Certification Policies, Data Filters, Scheduled Jobs"
+        },
+        {
+          "id": "B",
+          "text": "Stale, Orphan, Duplicate"
+        },
+        {
+          "id": "C",
+          "text": "Certification Filter, Certification Template, Audit"
+        },
+        {
+          "id": "D",
+          "text": "Technical Service Offerings, Dynamic CI Groups, CMDB Groups"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384916-exam-cis-df-topic-3-question-6-discussion/",
+      "tags": []
+    },
+    {
+      "id": 27,
+      "type": "single_choice",
+      "question": "A Configuration Manager wants to use the Unified Map.Where would it be accessed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "CMDB Data Manager"
+        },
+        {
+          "id": "B",
+          "text": "CI Class Manager"
+        },
+        {
+          "id": "C",
+          "text": "CMDB Workspace"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384919-exam-cis-df-topic-4-question-6-discussion/",
+      "tags": []
+    },
+    {
+      "id": 28,
+      "type": "single_choice",
+      "question": "A CMDB Administrator wants to improve data quality related to the CSDM.Which action should the Administrator take to meet this goal?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use the default configured CMDB Health Dashboard"
+        },
+        {
+          "id": "B",
+          "text": "Start the ServiceNow Health Scan"
+        },
+        {
+          "id": "C",
+          "text": "Use the CSDM Data Foundation Dashboard"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384921-exam-cis-df-topic-5-question-6-discussion/",
+      "tags": []
+    },
+    {
+      "id": 29,
+      "type": "single_choice",
+      "question": "A Change Manager aims to streamline ITSM processes by automatically populating fields on the Change form when a CI is selected. The Configuration Management team is working to ensure that the Change Group field is populated for all managed CIs.As a result, which base system field on the incident form will be automatically populated after selecting a CI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Managed by group"
+        },
+        {
+          "id": "B",
+          "text": "Approval group"
+        },
+        {
+          "id": "C",
+          "text": "Assignment group"
+        },
+        {
+          "id": "D",
+          "text": "Change group"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384364-exam-cis-df-topic-1-question-7-discussion/",
+      "tags": []
+    },
+    {
+      "id": 30,
+      "type": "single_choice",
+      "question": "A Platform Data Owner wants to improve data quality with a few reconciliation rules across the five discovery sources that are being used. The Data Owner knows the best option is to include CMDB 360/Multisource CMDB to manage and monitor discovery sources, but the company currently does not have a license for ITOM Discovery that is required for CMDB 360/Multisource CMDB.What can the Data Owner do in this case?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "ITOM Discovery needs to be purchased to take advantage of the multisource IRE Rules."
+        },
+        {
+          "id": "B",
+          "text": "CMBD 360/Multisource is a platform product that can be used immediately."
+        },
+        {
+          "id": "C",
+          "text": "The IRE reconciliation rules can use discovery source regardless of CMDB 360 being enabled."
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384712-exam-cis-df-topic-2-question-7-discussion/",
+      "tags": []
+    },
+    {
+      "id": 31,
+      "type": "single_choice",
+      "question": "A CMDB Administrator has been tasked with gathering information for a presentation to leadership. The Administrator needs to provide Duplicate CI, Orphan CI, and Stale CI metrics.Which scorecard provides this information on the CMDB Health Dashboard?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Completeness"
+        },
+        {
+          "id": "B",
+          "text": "Compliance"
+        },
+        {
+          "id": "C",
+          "text": "Correctness"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384720-exam-cis-df-topic-3-question-7-discussion/",
+      "tags": []
+    },
+    {
+      "id": 32,
+      "type": "multiple_choice",
+      "question": "A service owner is using Unified Map to understand to composition of a service but wants to filter out irrelevant information.Which options are available to the service owner from the filter panel? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Discovery source"
+        },
+        {
+          "id": "B",
+          "text": "CI type"
+        },
+        {
+          "id": "C",
+          "text": "Business critically"
+        },
+        {
+          "id": "D",
+          "text": "Managed by group"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384733-exam-cis-df-topic-4-question-7-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 33,
+      "type": "single_choice",
+      "question": "According to the Common Service Data Model (CSDM), a server team is requesting a catalog item be created for infrastructure upgrade requests.Which role is involved in initiating the request and defining requirements?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Enterprise Architecture"
+        },
+        {
+          "id": "B",
+          "text": "Technology Service Owners"
+        },
+        {
+          "id": "C",
+          "text": "Application Service Owners"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384922-exam-cis-df-topic-5-question-7-discussion/",
+      "tags": []
+    },
+    {
+      "id": 34,
+      "type": "single_choice",
+      "question": "A Data Center Manager is working with the CMDB CI Class Manager to define the relationship between Application Servers and the Applications they host. The company has multiple Application Servers that host one or more Applications.Which describes the relationship between the Application Server table ([cmdb_ci_app_server]) and the Application table ([cmdb_ci_appl])?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Many-to-one"
+        },
+        {
+          "id": "B",
+          "text": "One-to-one"
+        },
+        {
+          "id": "C",
+          "text": "One-to-many"
+        },
+        {
+          "id": "D",
+          "text": "Many-to-many"
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384365-exam-cis-df-topic-1-question-8-discussion/",
+      "tags": []
+    },
+    {
+      "id": 35,
+      "type": "single_choice",
+      "question": "Which ServiceNow solution creates automatic relationships?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "IntegrationHub ETL"
+        },
+        {
+          "id": "B",
+          "text": "Discovery"
+        },
+        {
+          "id": "C",
+          "text": "Workflow Studio"
+        },
+        {
+          "id": "D",
+          "text": "Service Mapping"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384713-exam-cis-df-topic-2-question-8-discussion/",
+      "tags": []
+    },
+    {
+      "id": 36,
+      "type": "single_choice",
+      "question": "What is the difference between Data Certification and Attestation policies when managing a CI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Attestation requires correcting specific attributes of a CI, while Data Certification tracks acknowledgement the CI still exists."
+        },
+        {
+          "id": "B",
+          "text": "Attestation can be scheduled, while Data Certification cannot be scheduled."
+        },
+        {
+          "id": "C",
+          "text": "Attestation tracks acknowledgement the CI still exists, while Data Certification requires validating specific attributes of a CI."
+        },
+        {
+          "id": "D",
+          "text": "Attestation can be assigned to a Group or an individual, while Data Certification can only be assigned to an individual."
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384721-exam-cis-df-topic-3-question-8-discussion/",
+      "tags": []
+    },
+    {
+      "id": 37,
+      "type": "multiple_choice",
+      "question": "A CMDB Administrator wants to create a CMDB query to find all databases located in Seattle that are connected to application services. They also want to include incidents related to those databases.Which actions does the company take to build this query? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Add to the canvas the Incident table from the Non-CMDB Tables list"
+        },
+        {
+          "id": "B",
+          "text": "Add a filter to the database node for location=Seattle"
+        },
+        {
+          "id": "C",
+          "text": "Set the relationship level to \u2018Up to 2nd level relationships\u2019"
+        },
+        {
+          "id": "D",
+          "text": "Add property columns to the application service node"
+        }
+      ],
+      "correct_answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384734-exam-cis-df-topic-4-question-8-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 38,
+      "type": "multiple_choice",
+      "question": "A CMDB Administrator is evaluating whether to monitor the metrics provided on the CMDB Foundation Dashboard.Which benefits support the decision to continually monitor the results on this dashboard? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Provides a list of all CIs that failed health audits"
+        },
+        {
+          "id": "B",
+          "text": "Provides metrics for CIs Processed by the IRE"
+        },
+        {
+          "id": "C",
+          "text": "Provides metrics on active CIs updated in the last 90 days"
+        },
+        {
+          "id": "D",
+          "text": "Reports on all orphan CIs in the CMDB"
+        }
+      ],
+      "correct_answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384483-exam-cis-df-topic-5-question-8-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 39,
+      "type": "single_choice",
+      "question": "A CMDB Administrator needs to identify which attributes have been created specifically for the Windows Server class.Which tab in the Attributes section is used?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All"
+        },
+        {
+          "id": "B",
+          "text": "Derived"
+        },
+        {
+          "id": "C",
+          "text": "Added"
+        },
+        {
+          "id": "D",
+          "text": "Child"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384538-exam-cis-df-topic-1-question-9-discussion/",
+      "tags": []
+    },
+    {
+      "id": 40,
+      "type": "single_choice",
+      "question": "The Apache Web Server Identification Rule is configured with the following Criterion attributes:Class -Configuration file -Version -Yesterday, an Apache Web Server CI was discovered as part of Service Mapping. Today, the application owner upgraded Apache to a different version and reran discovery of the service.What will happen in the CMDB?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The existing Apache Web Server CI will be reconciled and its version will be updated."
+        },
+        {
+          "id": "B",
+          "text": "A duplication error will occur."
+        },
+        {
+          "id": "C",
+          "text": "The Apache Web Server CI will be reclassified as a Web Server CI."
+        },
+        {
+          "id": "D",
+          "text": "A new Apache Web Server CI is created."
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384915-exam-cis-df-topic-2-question-9-discussion/",
+      "tags": []
+    },
+    {
+      "id": 41,
+      "type": "single_choice",
+      "question": "A CMDB Administrator is reviewing the health of the CMDB and notices a large percentage of the Hardware CIs are missing serial numbers. The Administrator is concerned this may cause duplicate CIs and would like to resolve the issue in a timely manner.What structured guidelines provided by ServiceNow are available to troubleshoot and resolve the issue?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "CMDB Health Dashboards Playbooks"
+        },
+        {
+          "id": "B",
+          "text": "CSDM Now Create Playbooks"
+        },
+        {
+          "id": "C",
+          "text": "CSDB Data Foundations Dashboard Playbooks"
+        },
+        {
+          "id": "D",
+          "text": "CSDM Data Foundations Dashboard Playbooks"
+        }
+      ],
+      "correct_answers": [
+        "A"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384532-exam-cis-df-topic-3-question-9-discussion/",
+      "tags": []
+    },
+    {
+      "id": 42,
+      "type": "multiple_choice",
+      "question": "The Configuration Manager is preparing the justification to utilize the CMDB Data Foundations Dashboard.Which benefits align with the usage of this dashboard? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It enables monitoring and tracking of CMDB health over time."
+        },
+        {
+          "id": "B",
+          "text": "It provides actionable insights to improve data quality and completeness."
+        },
+        {
+          "id": "C",
+          "text": "It helps detect and eliminate duplicate records in the CMDB."
+        },
+        {
+          "id": "D",
+          "text": "It automates the approval process for change management."
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384923-exam-cis-df-topic-5-question-9-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 43,
+      "type": "multiple_choice",
+      "question": "An Asset Manager wants to ensure that Asset records and CI records are kept synchronized automatically.How does the Manager do this? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Ensure one-to-one physical mapping between Asset and CI"
+        },
+        {
+          "id": "B",
+          "text": "Ensure that scheduled jobs are run during off-business hours to ensure sync happens"
+        },
+        {
+          "id": "C",
+          "text": "Ensure that the business rule to update Asset fields on change on the CI table is active"
+        },
+        {
+          "id": "D",
+          "text": "Ensure that the business rule to update CI fields on change on the asset table is active"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384539-exam-cis-df-topic-1-question-10-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 44,
+      "type": "multiple_choice",
+      "question": "Configuration Management needs to ensure data quality for all CIs in the CMDB.What areas of data quality for CIs are in the CMDB Health Dashboard? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Missing CIs"
+        },
+        {
+          "id": "B",
+          "text": "State CIs"
+        },
+        {
+          "id": "C",
+          "text": "Duplicate CIs"
+        },
+        {
+          "id": "D",
+          "text": "Downgraded CIs"
+        },
+        {
+          "id": "E",
+          "text": "Upgraded CIs"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384481-exam-cis-df-topic-3-question-10-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 45,
+      "type": "multiple_choice",
+      "question": "A Change Manager wants to gain value from CSDM.How will the Change Management process benefit from CSDM? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Identify blackout windows for the change"
+        },
+        {
+          "id": "B",
+          "text": "Determine the root cause of the change issue"
+        },
+        {
+          "id": "C",
+          "text": "Understand the impact of the change on services"
+        },
+        {
+          "id": "D",
+          "text": "Route the change dynamically"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384924-exam-cis-df-topic-5-question-10-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 46,
+      "type": "single_choice",
+      "question": "The CMDB Configuration Management team has successfully developed a healthy and trusted CMDB. They have integrated discovered infrastructure data, accurately referenced non-discoverable data (such as change and support group information), and made the CMDB service-aware using Service Mapping.Which field on an Incident form is automatically populated after a CI is selected that references an appropriate support group?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Support Group"
+        },
+        {
+          "id": "B",
+          "text": "Approval Group"
+        },
+        {
+          "id": "C",
+          "text": "Change Group"
+        },
+        {
+          "id": "D",
+          "text": "Assignment Group"
+        },
+        {
+          "id": "E",
+          "text": "Managed by Group"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384540-exam-cis-df-topic-1-question-11-discussion/",
+      "tags": []
+    },
+    {
+      "id": 47,
+      "type": "single_choice",
+      "question": "An organization needs to maintain non-discoverable attributes, such as warranty expiration dates, for hardware CIs. These attributes are not updated by automated discovery tools.What method ensures these attributes are accurately maintained for all CIs?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Create a new CI class specifically for non-discoverable attributes"
+        },
+        {
+          "id": "B",
+          "text": "Use the CMDB Reconciliation Engine to update the attributes"
+        },
+        {
+          "id": "C",
+          "text": "Use a scheduled data import to update the attributes from an external source"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384715-exam-cis-df-topic-2-question-11-discussion/",
+      "tags": []
+    },
+    {
+      "id": 48,
+      "type": "single_choice",
+      "question": "A CMDB Configuration Manager is reviewing the metrics on the CMDB Health Dashboard\u2019s Correctness Scorecard for the Server class which consists of a total of 60,000 servers in the CMDB.For the Duplicate metric, it shows Healthy CIs/Evaluated as 59,000/60,000.For the Orphan metric, it shows Healthy CIs/Evaluated as 45,000/50,000.Which configuration explains the difference in the scope of Server CIs (60,000 vs.50,000) evaluated between the two metrics?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The Duplicate metric has a CMDB Group configured for the Server class."
+        },
+        {
+          "id": "B",
+          "text": "The Duplicate metric has a Health Inclusion rule configured for the Server class."
+        },
+        {
+          "id": "C",
+          "text": "The Orphan metric has a Health Inclusion rule configured for the Server class."
+        },
+        {
+          "id": "D",
+          "text": "The Orphan metric has a CMDB Group configured for the Server class."
+        }
+      ],
+      "correct_answers": [
+        "D"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384722-exam-cis-df-topic-3-question-11-discussion/",
+      "tags": []
+    },
+    {
+      "id": 49,
+      "type": "multiple_choice",
+      "question": "Which are business values of CMDB? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Collecting and managing financial data"
+        },
+        {
+          "id": "B",
+          "text": "Streaming incident and change management"
+        },
+        {
+          "id": "C",
+          "text": "Strengthening operational resiliency"
+        },
+        {
+          "id": "D",
+          "text": "Automating maintenance for CI relationships"
+        }
+      ],
+      "correct_answers": [],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384925-exam-cis-df-topic-5-question-11-discussion/",
+      "tags": [],
+      "select_count": 2
+    },
+    {
+      "id": 50,
+      "type": "multiple_choice",
+      "question": "A Configuration Management Process Owner is preparing solution options for presentation to the technical governance board for ingesting custom CIs to the CMDB. The solution needs to align with best practice, minimize the cost of future work (technical debt) and ensure compliance with future upgrades.Which solutions accomplish this? (Choose two.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Repurposing a base CI class and rename attributes, as required"
+        },
+        {
+          "id": "B",
+          "text": "Extending an existing CI class table to accommodate the custom CI class attributes"
+        },
+        {
+          "id": "C",
+          "text": "Installing or upgrading the \u2018CMDB CI Class Models\u2019 store application to find a suitable existing CI class accommodating any new attributes"
+        },
+        {
+          "id": "D",
+          "text": "Extending an existing Asset class table to accommodate the custom CI class attributes"
+        }
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "https://www.examtopics.com/discussions/servicenow/view/384705-exam-cis-df-topic-1-question-12-discussion/",
+      "tags": [],
+      "select_count": 2
+    }
+  ],
+  "exam_metadata": {
+    "title": "CIS-DF ET - 1",
+    "source": "CIS-DF ET - 1.json",
+    "total_questions": 50
+  }
+}
